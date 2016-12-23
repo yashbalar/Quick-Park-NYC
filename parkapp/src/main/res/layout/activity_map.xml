@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+            <com.nyc.cloud.park.View.MaterialProgressBar
+                android:layout_width="40dp"
+                android:id="@+id/mapProgressbar"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="100dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/search"
+                android:padding="10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/destination"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="Search a destination..."
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/checkProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_menu_person"
+                    app:backgroundTint="@color/primary_dark" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/park_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_park"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/primary_dark" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/unpark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_unpark"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/primary_dark" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/myLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_my_location"
+                    app:backgroundTint="@color/primary_dark" />
+            </RelativeLayout>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/getParking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottomLayout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_search"
+                app:backgroundTint="@color/primary_dark"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

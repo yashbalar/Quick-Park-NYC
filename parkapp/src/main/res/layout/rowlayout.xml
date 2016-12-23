@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/priText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="62 Dales Avenue"
+        android:padding="5dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/secText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="62 Dales Avenue"
+        android:layout_marginLeft="40dp"
+        android:textSize="13dp"/>
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8b8682"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/nPass"/>
+
+</LinearLayout>

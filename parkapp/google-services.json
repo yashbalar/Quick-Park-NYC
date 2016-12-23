@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "895154379476",
+    "firebase_url": "https://nycpark-1479369300488.firebaseio.com",
+    "project_id": "nycpark-1479369300488",
+    "storage_bucket": "nycpark-1479369300488.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895154379476:android:0648061c2fd59123",
+        "android_client_info": {
+          "package_name": "com.nyc.cloud.park"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895154379476-pfhfe1qv1b8r4j9kp05uipjkrofjjlvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfQNbZhAtGL4yL3tWg4XZoZQuOXkDYypY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895154379476:android:6eb77e37273e4d1f",
+        "android_client_info": {
+          "package_name": "com.gnirt69.firebasenotificationexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895154379476-pfhfe1qv1b8r4j9kp05uipjkrofjjlvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfQNbZhAtGL4yL3tWg4XZoZQuOXkDYypY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
